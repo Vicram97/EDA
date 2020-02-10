@@ -1,0 +1,3 @@
+﻿  Source.cpp
+c:\users\imnottortillero\desktop\3º curso\eda\funcion log\funcion log\source.cpp(5): warning C4244: 'return' : conversión de 'double' a 'int'; posible pérdida de datos
+  Funcion log.vcxproj -> C:\Users\ImNotTortillero\Desktop\3º Curso\EDA\Funcion log\Debug\Funcion log.exe

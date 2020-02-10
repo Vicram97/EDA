@@ -1,0 +1,22 @@
+posicion 0 = menos significativo
+
+int decimal(int v[], int n)
+{
+//Precondición: 0 < n <= long(v) && Aw: 0 <= w<n: v[w] = 0 || v[w] = 1
+//PostCondición:d = sumatorio w : 0 <= w < n : v[w] * 2(w)
+
+int d = 0;
+int p = 1;
+for(int i = 0; i < n;++i)
+	{
+	d += v[i] * p;
+	p *= 2;
+	}
+//Inv: 0 <= i < n && d = sum w : 0 <= w < i: v[w] * 2(w) && p = 2 (i);
+//Cota: n-i
+
+//Coste lineal porque:
+	- inicialización constante de parámetros
+	- for constante
+	- dentro es constante pero da n vueltas
+}

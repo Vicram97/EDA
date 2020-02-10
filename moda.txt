@@ -1,0 +1,23 @@
+//Precondicion: 1 <= n <= long (a)
+int moda(int a[], int n) // return m
+//PostCondición: frec(m,a,n) = max w: 0 <= w < n: frec (a[w],a,w)
+
+
+//Inv: 1 <= i <= n && fa = frec(a[i-1], a ,i) && fm = max w: 0 <= w < i 
+
+int moda (int a[], int n)
+{
+int i = 0, m = a[0],fm=1,fa=1;
+
+while(i<n){
+	if(v[i] == v[i-1]) ++fa;
+	else fa = 1;
+
+	if(fm<fa) fm = fa; m = v[i];
+
+	++i;
+	
+	}
+
+return m;
+}
